@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  padding: 1rem 0 2rem 0;
+}
+p {
+  margin: 0;
+}
+fieldset {
+  padding-top: 0 !important;
+  legend {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: 0 !important;
+    font-size: 1em !important;
+    line-height: inherit;
+    color: inherit;
+    white-space: normal;
+  }
+}
+.ui-fieldset, .ui-fieldset .ui-fieldset-legend{
+  padding-top: 0 !important;
+}
+textarea{
+  width: 100% !important;
+}
+.ui-autocomplete .ui-autocomplete-input {
+  padding: 0.429em;
+  width: 100% !important;
+}
+.p-field.p-grid > label {
+  margin-bottom: 0;
+  display: flex;
+  align-items: baseline;
+}
+.ui-dropdown {
+  min-width: 1rem !important;
+    width: 100% !important;
+
+}
+body .ui-inputtext{
+  min-width: 100px;
+  width: 100%;
+}

@@ -1,0 +1,686 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <h6 class="m-0"><strong>CP ID: </strong>CMAKDVNVNKL</h6>
+    </div>
+    <div class="col-md-4 text-right">
+      <h3 class="m-0">Customer Preferance</h3>
+    </div>
+    <div class="col-md-4">
+      <h6 class="m-0">Last Updated:15 july 2020 15:35</h6>
+    </div>
+    <div class="col-md-2 text-right">
+      <button class="btn btn-danger btn-block">Revision History</button>
+    </div>
+  </div>
+  <div class="container-fluid border">
+    <div class="row pt-3 pb-3 pl-1 pr-1 mx-auto">
+      <div class="p-field p-grid m-0 p-1" style="width: 20%;">
+        <label for="firstname3" class="p-col-fixed" style="width: 30%;"
+          >Carrier</label
+        >
+        <div class="p-col">
+          <p-dropdown></p-dropdown>
+        </div>
+      </div>
+
+
+      <div class="p-field p-grid m-0 p-1" style="width: 16%;">
+        <label for="firstname3" class="p-col-fixed" style="width: 30%;"
+          >Country</label
+        >
+        <div class="p-col">
+          <p-autoComplete [(ngModel)]="country" [suggestions]="filteredCountriesSingle" (completeMethod)="filterCountrySingle($event)" field="name" [size]="30"
+        placeholder="Countries" [minLength]="1"></p-autoComplete>
+        </div>
+      </div>
+
+      <div class="p-field p-grid m-0 p-1" style="width: 8%;">
+        <label for="firstname3" class="p-col-fixed" style="width: 50%;"
+          >Department</label>
+      </div>
+        <div class="p-field p-grid m-0 p-1" style="width: 8%;">
+          <p-autoComplete></p-autoComplete>
+        </div>
+
+
+      <div class="p-field p-grid m-0 p-1" style="width: 8%;">
+        <label for="firstname3" class="p-col-fixed" style="width: 100%;"
+          >Start Date</label
+        >
+      </div>
+      <div class="p-field p-grid m-0 p-1" style="width: 8%;">
+        <p-calendar></p-calendar>
+      </div>
+
+      <div class="p-field p-grid m-0 p-1" style="width: 8%;">
+        <label for="firstname3" class="p-col-fixed" style="width: 100%;"
+          >End Date</label
+        >
+      </div>
+
+      <div class="p-field p-grid m-0 p-1" style="width: 8%;">
+        <p-calendar></p-calendar>
+      </div>
+
+      <div class="p-field p-grid m-0 p-1" style="width: 8%;">
+        <label for="firstname3" class="p-col-fixed" style="width: 100%;"
+          >Review Date</label
+        >
+      </div>
+      <div class="p-field p-grid m-0 p-1" style="width: 8%;">
+        <p-calendar></p-calendar>
+      </div>
+    </div>
+
+    <div class="row pt-3 pb-3 pl-1 pr-1 mx-auto">
+      <div class="p-field p-grid m-0 p-1" style="width: 12%;">
+        <label for="firstname3" class="p-col-fixed" style="width: 100%;"
+          >Agency Owner City</label
+        >
+      </div>
+        <div class="p-field p-grid m-0 p-1" style="width: 8%;">
+          <p-autoComplete></p-autoComplete>
+        </div>
+
+
+      <div class="p-field p-grid m-0 p-1" style="width: 20%;">
+        <label for="firstname3" class="p-col-fixed" style="width: 50%;"
+          >Owner Name</label
+        >
+        <div class="p-col">
+          <input id="firstname3" type="text" pInputText style="width: 100%;" />
+        </div>
+      </div>
+
+      <div class="p-field p-grid m-0 p-1" style="width: 20%;">
+        <label for="firstname3" class="p-col-fixed" style="width: 30%;"
+          >Status</label
+        >
+        <div class="p-col">
+          <p-dropdown></p-dropdown>
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-right pb-3 pl-1 pr-1">
+      <div class="col-md-8">&nbsp;</div>
+      <div class="col-md-2">
+        <button class="btn btn-primary btn-block">Preview</button>
+      </div>
+      <div class="col-md-2">
+        <button class="btn btn-success btn-block">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="pt-3 pb-3 mx-auto row">
+    <p-tabView style="width: 100%;">
+      <p-tabPanel header="Customer & Parties">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="p-field p-grid m-0 pb-1">
+              <label for="firstname3" class="p-col-fixed" style="width: 40%;"
+                >BP Cord:</label
+              >
+              <div class="p-col">
+                <input
+                  id="firstname3"
+                  type="text"
+                  pInputText
+                  style="width: 100%;"
+                />
+              </div>
+            </div>
+
+            <div class="p-field p-grid m-0 pb-1">
+              <label for="firstname3" class="p-col-fixed" style="width: 40%;"
+                >Name:</label
+              >
+              <div class="p-col">
+                <input
+                  id="firstname3"
+                  type="text"
+                  pInputText
+                  style="width: 100%;"
+                />
+              </div>
+            </div>
+
+            <div class="p-field p-grid m-0 pb-1">
+              <label for="firstname3" class="p-col-fixed" style="width: 40%;"
+                >Short Name:</label
+              >
+              <div class="p-col">
+                <input
+                  id="firstname3"
+                  type="text"
+                  pInputText
+                  style="width: 100%;"
+                />
+              </div>
+            </div>
+
+            <div class="p-formgroup-inline">
+              <div class="p-field-checkbox mr-1">
+                <label class="mr-1 ml-1">Role :</label>
+              </div>
+              <div class="p-field-checkbox mr-1">
+                <p-checkbox
+                  name="city3"
+                  value="Chicago"
+                  inputId="city3"
+                ></p-checkbox>
+                <label for="city3" class="mr-1 ml-1">DCD</label>
+              </div>
+              <div class="p-field-checkbox mr-1">
+                <p-checkbox
+                  name="city4"
+                  value="Los Angeles"
+                  inputId="city4"
+                ></p-checkbox>
+                <label for="city4" class="mr-1 ml-1">BKG</label>
+              </div>
+              <div class="p-field-checkbox mr-1">
+                <p-checkbox
+                  name="city3"
+                  value="Chicago"
+                  inputId="city3"
+                ></p-checkbox>
+                <label for="city3" class="mr-1 ml-1">SHP</label>
+              </div>
+              <div class="p-field-checkbox mr-1">
+                <p-checkbox
+                  name="city4"
+                  value="Los Angeles"
+                  inputId="city4"
+                ></p-checkbox>
+                <label for="city4" class="mr-1 ml-1">FWD</label>
+              </div>
+              <div class="p-field-checkbox mr-1">
+                <p-checkbox
+                  name="city3"
+                  value="Chicago"
+                  inputId="city3"
+                ></p-checkbox>
+                <label for="city3" class="mr-1 ml-1">PAY</label>
+              </div>
+              <div class="p-field-checkbox mr-1">
+                <p-checkbox
+                  name="city4"
+                  value="Los Angeles"
+                  inputId="city4"
+                ></p-checkbox>
+                <label for="city4" class="mr-1 ml-1">COL</label>
+              </div>
+
+              <div class="p-field-checkbox mr-1">
+                <p-checkbox
+                  name="city3"
+                  value="Chicago"
+                  inputId="city3"
+                ></p-checkbox>
+                <label for="city3" class="mr-1 ml-1">Ultimate Owner</label>
+              </div>
+              <div class="p-field-checkbox mr-1">
+                <p-checkbox
+                  name="city4"
+                  value="Los Angeles"
+                  inputId="city4"
+                ></p-checkbox>
+                <label for="city4" class="mr-1 ml-1">Global Account</label>
+              </div>
+              <div class="p-field-checkbox mr-1">
+                <p-checkbox
+                  name="city3"
+                  value="Chicago"
+                  inputId="city3"
+                ></p-checkbox>
+                <label for="city3" class="mr-1 ml-1">Local VIP</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <p-fieldset legend="Booking Party">
+              <div class="p-field p-grid m-0 pb-1">
+                <label for="firstname3" class="p-col-fixed" style="width: 40%;"
+                  >BP Code:</label
+                >
+                <div class="p-col">
+                  <input
+                    id="firstname3"
+                    type="text"
+                    pInputText
+                    style="width: 100%;"
+                  />
+                </div>
+              </div>
+              <div class="p-field p-grid m-0 pb-1">
+                <label for="firstname3" class="p-col-fixed" style="width: 40%;"
+                  >Name:</label
+                >
+                <div class="p-col">
+                  <input
+                    id="firstname3"
+                    type="text"
+                    pInputText
+                    style="width: 100%;"
+                  />
+                </div>
+              </div>
+            </p-fieldset>
+            <p-fieldset legend="Forwarder">
+              <div class="p-field p-grid m-0 pb-1">
+                <label for="firstname3" class="p-col-fixed" style="width: 40%;"
+                  >BP Code:</label
+                >
+                <div class="p-col">
+                  <input
+                    id="firstname3"
+                    type="text"
+                    pInputText
+                    style="width: 100%;"
+                  />
+                </div>
+              </div>
+              <div class="p-field p-grid m-0 pb-1">
+                <label for="firstname3" class="p-col-fixed" style="width: 40%;"
+                  >Name:</label
+                >
+                <div class="p-col">
+                  <input
+                    id="firstname3"
+                    type="text"
+                    pInputText
+                    style="width: 100%;"
+                  />
+                </div>
+              </div>
+            </p-fieldset>
+          </div>
+          <div class="col-md-3">
+            <p-fieldset legend="DCD Party">
+              <div class="p-field p-grid m-0 pb-1">
+                <label for="firstname3" class="p-col-fixed" style="width: 40%;"
+                  >BP Code:</label
+                >
+                <div class="p-col">
+                  <input
+                    id="firstname3"
+                    type="text"
+                    pInputText
+                    style="width: 100%;"
+                  />
+                </div>
+              </div>
+              <div class="p-field p-grid m-0 pb-1">
+                <label for="firstname3" class="p-col-fixed" style="width: 40%;"
+                  >Name:</label
+                >
+                <div class="p-col">
+                  <input
+                    id="firstname3"
+                    type="text"
+                    pInputText
+                    style="width: 100%;"
+                  />
+                </div>
+              </div>
+            </p-fieldset>
+            <p-fieldset legend="Shipper">
+              <div class="p-field p-grid m-0 pb-1">
+                <label for="firstname3" class="p-col-fixed" style="width: 40%;"
+                  >BP Code:</label
+                >
+                <div class="p-col">
+                  <input
+                    id="firstname3"
+                    type="text"
+                    pInputText
+                    style="width: 100%;"
+                  />
+                </div>
+              </div>
+              <div class="p-field p-grid m-0 pb-1">
+                <label for="firstname3" class="p-col-fixed" style="width: 40%;"
+                  >Name:</label
+                >
+                <div class="p-col">
+                  <input
+                    id="firstname3"
+                    type="text"
+                    pInputText
+                    style="width: 100%;"
+                  />
+                </div>
+              </div>
+            </p-fieldset>
+          </div>
+          <div class="col-md-3">
+            <p-fieldset legend="NAC">
+              <div class="p-field p-grid m-0 pb-1">
+                <label for="firstname3" class="p-col-fixed" style="width: 40%;"
+                  >BP Code:</label
+                >
+                <div class="p-col">
+                  <input
+                    id="firstname3"
+                    type="text"
+                    pInputText
+                    style="width: 100%;"
+                  />
+                </div>
+              </div>
+              <div class="p-field p-grid m-0 pb-1">
+                <label for="firstname3" class="p-col-fixed" style="width: 40%;"
+                  >Name:</label
+                >
+                <div class="p-col">
+                  <input
+                    id="firstname3"
+                    type="text"
+                    pInputText
+                    style="width: 100%;"
+                  />
+                </div>
+              </div>
+            </p-fieldset>
+            <p-fieldset legend="Consignee">
+              <div class="p-field p-grid m-0 pb-1">
+                <label for="firstname3" class="p-col-fixed" style="width: 40%;"
+                  >BP Code:</label
+                >
+                <div class="p-col">
+                  <input
+                    id="firstname3"
+                    type="text"
+                    pInputText
+                    style="width: 100%;"
+                  />
+                </div>
+              </div>
+              <div class="p-field p-grid m-0 pb-1">
+                <label for="firstname3" class="p-col-fixed" style="width: 40%;"
+                  >Name:</label
+                >
+                <div class="p-col">
+                  <input
+                    id="firstname3"
+                    type="text"
+                    pInputText
+                    style="width: 100%;"
+                  />
+                </div>
+              </div>
+            </p-fieldset>
+          </div>
+        </div>
+      </p-tabPanel>
+      <p-tabPanel header="Quotation and Chrages">
+        <div class="row">
+          <div class="col-md-4">
+            <p-fieldset legend="Quotation and Chrages">
+              <div class="row">
+                <div class="col-6">
+                  <label for="firstname">US-SVC/GA Ref.</label>
+                  <input
+                    id="firstname3"
+                    type="text"
+                    pInputText
+                    style="width: 100%;"
+                  />
+                </div>
+                <div class="col-6">
+                  <label for="firstname">Prepaid/Collect</label>
+                  <p-autoComplete
+
+                  ></p-autoComplete>
+                </div>
+                <div class="col-6">
+                  <label for="firstname">POP</label>
+                  <input
+                    id="firstname3"
+                    type="text"
+                    pInputText
+                    style="width: 100%;"
+                  />
+                </div>
+              </div>
+            </p-fieldset>
+          </div>
+        </div>
+      </p-tabPanel>
+      <p-tabPanel header="Origin & Destination">
+        <div class="row">
+          <div class="col-md-4">
+            <p-fieldset legend="Origin">
+              <div class="row">
+                <div class="col-4">
+                  <label for="firstname">Countries</label>
+                  <p-autoComplete ></p-autoComplete>
+                </div>
+                <div class="col-4">
+                  <label for="firstname">POL</label>
+                  <p-autoComplete
+
+                  ></p-autoComplete>
+                </div>
+                <div class="col-4">
+                  <label for="firstname">POO</label>
+                  <p-autoComplete ></p-autoComplete>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <label for="firstname">Trade-Zone</label>
+                  <p-dropdown></p-dropdown>
+                </div>
+                <div class="col-md-4">
+                  <label for="firstname">Movement-Terms</label>
+                  <p-dropdown></p-dropdown>
+                </div>
+                <div class="col-md-4">
+                  <label for="firstname">Transport-Mode</label>
+                  <p-dropdown [style]="{ width: '100%' }"></p-dropdown>
+                </div>
+              </div>
+            </p-fieldset>
+          </div>
+          <div class="col-md-4">
+            <p-fieldset legend="Destination">
+              <div class="row">
+                <div class="col-4">
+                  <label for="firstname">Countries</label>
+                  <p-autoComplete ></p-autoComplete>
+                </div>
+                <div class="col-4">
+                  <label for="firstname">POL</label>
+                  <p-autoComplete
+
+                  ></p-autoComplete>
+                </div>
+                <div class="col-4">
+                  <label for="firstname">POO</label>
+                  <p-autoComplete ></p-autoComplete>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <label for="firstname">Trade-Zone</label>
+                  <p-dropdown></p-dropdown>
+                </div>
+                <div class="col-4">
+                  <label for="firstname">Movement-Terms</label>
+                  <p-dropdown></p-dropdown>
+                </div>
+                <div class="col-4">
+                  <label for="firstname">Transport-Mode</label>
+                  <p-dropdown></p-dropdown>
+                </div>
+              </div>
+            </p-fieldset>
+          </div>
+        </div>
+      </p-tabPanel>
+      <p-tabPanel header="Equipment & Commodity">
+        <div class="row">
+          <div class="col-md-4">
+            <p-fieldset legend="Equipment & Commodity">
+              <div class="row">
+                <div class="col-4">
+                  <label for="firstname">Category</label>
+                  <p-autoComplete ></p-autoComplete>
+                </div>
+                <div class="col-4">
+                  <label for="firstname">Size/Type</label>
+                  <p-autoComplete
+
+                  ></p-autoComplete>
+                </div>
+                <div class="col-4">
+                  <label for="firstname">Grade</label>
+                  <p-autoComplete ></p-autoComplete>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <label for="firstname">Preferred Depot</label>
+                  <input
+                    id="firstname3"
+                    type="text"
+                    pInputText
+                    style="width: 100%;"
+                  />
+                </div>
+                <div class="col-4">
+                  <label for="firstname">Commodity</label>
+                  <input
+                    id="firstname3"
+                    type="text"
+                    pInputText
+                    style="width: 100%;"
+                  />
+                </div>
+                <div class="col-4">
+                  <label for="firstname">HS Cord</label>
+                  <input
+                    id="firstname3"
+                    type="text"
+                    pInputText
+                    style="width: 100%;"
+                  />
+                </div>
+              </div>
+            </p-fieldset>
+          </div>
+        </div>
+      </p-tabPanel>
+      <p-tabPanel header="Others">
+        Content 3
+      </p-tabPanel>
+    </p-tabView>
+  </div>
+
+  <div class="pt-1 pb-3 mx-auto row">
+    <div class="col-md-12">
+      <p-fieldset legend="Customer Performance">
+        <div class="row">
+          <div class="col-md-3">
+            <p-fieldset legend="General Booking Remarks">
+              <textarea
+                [rows]="3"
+                pInputTextarea
+                autoResize="autoResize"
+              ></textarea>
+            </p-fieldset>
+
+            <p-fieldset legend="Intermodel">
+              <textarea
+                [rows]="3"
+                pInputTextarea
+                autoResize="autoResize"
+              ></textarea>
+            </p-fieldset>
+
+            <p-fieldset legend="Place Of Payment">
+              <textarea
+                [rows]="3"
+                pInputTextarea
+                autoResize="autoResize"
+              ></textarea>
+            </p-fieldset>
+          </div>
+
+          <div class="col-md-3">
+            <p-fieldset legend="Routing">
+              <textarea
+                [rows]="3"
+                pInputTextarea
+                autoResize="autoResize"
+              ></textarea>
+            </p-fieldset>
+
+            <p-fieldset legend="Charges">
+              <textarea
+                [rows]="3"
+                pInputTextarea
+                autoResize="autoResize"
+              ></textarea>
+            </p-fieldset>
+
+            <p-fieldset legend="Currency">
+              <textarea
+                [rows]="3"
+                pInputTextarea
+                autoResize="autoResize"
+              ></textarea>
+            </p-fieldset>
+          </div>
+
+          <div class="col-md-3">
+            <p-fieldset legend="Equipment">
+              <textarea
+                [rows]="3"
+                pInputTextarea
+                autoResize="autoResize"
+              ></textarea>
+            </p-fieldset>
+
+            <p-fieldset legend="Prepaid / Collect">
+              <textarea
+                [rows]="3"
+                pInputTextarea
+                autoResize="autoResize"
+              ></textarea>
+            </p-fieldset>
+
+            <p-fieldset legend="Other Freight Remarks">
+              <textarea
+                [rows]="3"
+                pInputTextarea
+                autoResize="autoResize"
+              ></textarea>
+            </p-fieldset>
+          </div>
+          <div class="col-md-3">
+            <p-fieldset legend="Commdity">
+              <textarea
+                [rows]="3"
+                pInputTextarea
+                autoResize="autoResize"
+              ></textarea>
+            </p-fieldset>
+
+            <p-fieldset legend="Paying Entity">
+              <textarea
+                [rows]="3"
+                pInputTextarea
+                autoResize="autoResize"
+              ></textarea>
+            </p-fieldset>
+          </div>
+        </div>
+      </p-fieldset>
+    </div>
+  </div>
+</div>
